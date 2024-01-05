@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="module.cpp" />
+    <ClCompile Include="hooks.cpp" />
+    <ClCompile Include="esp.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="aimbot.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SourceHelpers.hpp">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="detours.h">
+      <Filter>detours</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.hpp" />
+    <ClInclude Include="module.hpp" />
+    <ClInclude Include="features.hpp">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceTypes.hpp">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="CHLClient.hpp">
+      <Filter>sdk\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CInput.hpp">
+      <Filter>sdk\source</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientModeShared.hpp">
+      <Filter>sdk\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CViewRender.hpp">
+      <Filter>sdk\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>sdk\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.hpp">
+      <Filter>sdk\source</Filter>
+    </ClInclude>
+    <ClInclude Include="IClientEntityList.hpp">
+      <Filter>sdk\source</Filter>
+    </ClInclude>
+    <ClInclude Include="IDebugOverlay.hpp">
+      <Filter>sdk\source</Filter>
+    </ClInclude>
+    <ClInclude Include="IEngineClient.hpp">
+      <Filter>sdk\source</Filter>
+    </ClInclude>
+    <ClInclude Include="ISurface.hpp">
+      <Filter>sdk\source</Filter>
+    </ClInclude>
+    <ClInclude Include="IVModelInfoClient.hpp">
+      <Filter>sdk\source</Filter>
+    </ClInclude>
+    <ClInclude Include="IVPanel.hpp">
+      <Filter>sdk\source</Filter>
+    </ClInclude>
+    <ClInclude Include="NetVars.hpp">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="math.hpp">
+      <Filter>sdk</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{3ba4f578-7196-4af8-95c4-5874c9e861e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="detours">
+      <UniqueIdentifier>{86b37234-fdc6-47fe-b4be-0eab250487f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features">
+      <UniqueIdentifier>{05b39b43-6ee0-415d-b261-cb436c40e286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\source">
+      <UniqueIdentifier>{a5da8c62-6a88-482a-a464-d6324172c033}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="detours.lib">
+      <Filter>detours</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
